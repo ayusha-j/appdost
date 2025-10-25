@@ -1,53 +1,72 @@
 # 🚀 AppDost - Complete IT Solution
 
-A modern, dark-themed portfolio website built with Next.js 14, featuring stunning animations and a beautiful UI.
-
-## ✨ Features
-
-- **🎨 Modern Dark Theme** - Sleek dark design with gradient accents
-- **✨ Smooth Animations** - Powered by Framer Motion for fluid interactions
-- **📱 Fully Responsive** - Optimized for all devices and screen sizes
-- **⚡ Fast Performance** - Built with Next.js 14 App Router
-- **🎯 SEO Optimized** - Meta tags and semantic HTML
-- **🔥 Cool Effects** - Floating cards, scroll animations, hover effects
+A modern, responsive website for AppDost, built with Next.js 14, featuring stunning animations, a beautiful dark theme, and a seamless user experience.
 
 ## 🛠️ Tech Stack
 
 - **Framework:** Next.js 14 (App Router)
 - **Language:** TypeScript
-- **Styling:** TailwindCSS
-- **Animations:** Framer Motion
+- **Styling:** TailwindCSS with custom animations
+- **UI Components:** Custom built with Framer Motion
 - **Icons:** Lucide React
 - **Fonts:** Geist Sans & Geist Mono
+- **Build Tool:** Turbopack (via Next.js 14)
 
-## 📦 Installation
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.0.0 or later
+- npm or yarn package manager
+
+### Installation
 
 1. **Clone the repository:**
 ```bash
-git clone <your-repo-url>
-cd app-dost
+git clone https://github.com/ayusha-j/appdost.git
+cd appdost/app-dost
 ```
 
 2. **Install dependencies:**
 ```bash
 npm install
+# or
+yarn install
 ```
 
 3. **Run the development server:**
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
 4. **Open your browser:**
 Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🎯 Project Structure
+## 🏗️ Project Structure
 
 ```
 app-dost/
 ├── app/
-│   ├── layout.tsx          # Root layout with metadata
-│   ├── page.tsx            # Main page integrating all sections
+│   ├── favicon.ico        # Website favicon
+│   ├── globals.css        # Global styles and Tailwind imports
+│   ├── layout.tsx         # Root layout with metadata and providers
+│   └── page.tsx           # Main page component
+├── components/            # Reusable UI components
+│   ├── AboutAppDostSection.tsx  # About section component
+│   ├── AnimatedBackground.tsx   # Dynamic background component
+│   ├── DevelopmentProcess.tsx   # Development workflow section
+│   ├── Footer.tsx               # Footer component
+│   ├── HeroSection.tsx          # Hero section with call-to-action
+│   ├── Navbar.tsx               # Navigation bar
+│   ├── ProjectsSection.tsx      # Portfolio projects showcase
+│   └── ServicesSection.tsx      # Services carousel
+├── lib/
+│   └── utils.ts           # Utility functions
+└── public/                # Static assets
+    └── images/            # Image assets
+```
 │   └── globals.css         # Global styles and animations
 ├── components/
 │   ├── Navbar.tsx          # Navigation with mobile menu
@@ -131,13 +150,6 @@ Update component files in `components/` to modify text, images, and data.
 ### Animations
 Adjust Framer Motion parameters in component files for different animation effects.
 
-## 🌐 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
 ## 📄 License
 
 This project is open source and available under the MIT License.
@@ -148,4 +160,3 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-**Made with ❤️ by AppDost Team**
