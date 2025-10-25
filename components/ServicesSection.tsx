@@ -70,7 +70,6 @@ export default function ServicesSection() {
   
   const controls = useAnimation();
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
   const [scrollDistance, setScrollDistance] = useState(0);
 
   // Calculate scroll distance based on content width
@@ -106,29 +105,7 @@ export default function ServicesSection() {
     }
   }, []);
   
-  // Handle hover state
-  const handleHoverStart = () => {
-    setIsHovered(true);
-    controls.stop();
-  };
-  
-  const handleHoverEnd = () => {
-    setIsHovered(false);
-    if (scrollRef.current) {
-      const currentX = scrollRef.current.getBoundingClientRect().left;
-      controls.start({
-        x: [currentX, -scrollDistance],
-        transition: {
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 60,
-            ease: "linear"
-          }
-        }
-      });
-    }
-  };
+  // Continuous animation setup
   
 
   return (
@@ -169,15 +146,11 @@ export default function ServicesSection() {
             drag="x"
             dragConstraints={{ left: -scrollDistance, right: 0 }}
             dragElastic={0.1}
-            onHoverStart={handleHoverStart}
-            onHoverEnd={handleHoverEnd}
             onDragStart={() => {
               document.body.style.cursor = "grabbing";
-              setIsHovered(true);
             }}
             onDragEnd={() => {
               document.body.style.cursor = "";
-              setIsHovered(false);
             }}
           >
             {/* Duplicate services for seamless loop */}
