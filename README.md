@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 AppDost - Complete IT Solution
 
-## Getting Started
+A modern, dark-themed portfolio website built with Next.js 14, featuring stunning animations and a beautiful UI.
 
-First, run the development server:
+## ✨ Features
 
+- **🎨 Modern Dark Theme** - Sleek dark design with gradient accents
+- **✨ Smooth Animations** - Powered by Framer Motion for fluid interactions
+- **📱 Fully Responsive** - Optimized for all devices and screen sizes
+- **⚡ Fast Performance** - Built with Next.js 14 App Router
+- **🎯 SEO Optimized** - Meta tags and semantic HTML
+- **🔥 Cool Effects** - Floating cards, scroll animations, hover effects
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** TailwindCSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Fonts:** Geist Sans & Geist Mono
+
+## 📦 Installation
+
+1. **Clone the repository:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd app-dost
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies:**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run the development server:**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Open your browser:**
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 🎯 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app-dost/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main page integrating all sections
+│   └── globals.css         # Global styles and animations
+├── components/
+│   ├── Navbar.tsx          # Navigation with mobile menu
+│   ├── HeroSection.tsx     # Hero with floating cards & stats
+│   ├── DevelopmentProcess.tsx  # 4-step process cards
+│   ├── ServicesSection.tsx # 6 service cards with hover effects
+│   ├── ProjectsSection.tsx # Featured & open source projects
+│   └── Footer.tsx          # Footer with contact info
+├── lib/
+│   └── utils.ts            # Utility functions
+└── public/                 # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. **Hero Section**
+- Animated gradient background
+- Floating cards with project stats
+- Call-to-action buttons
+- Feature highlights
+- Stats counter (Web Projects, Android Apps, CRM, Founded Year)
 
-## Deploy on Vercel
+### 2. **Development Process**
+- 4-step process cards
+- Discovery & Planning
+- Design & Prototype
+- Development & Testing
+- Deployment & Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. **Services**
+- Android App Development
+- Web Development
+- UI/UX Development
+- CRM Software
+- Cloud Solutions
+- Cybersecurity
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. **Projects**
+- Featured Projects (BEU Mate, DevsRequest, The Weddings Chapter)
+- Open Source Projects (DeepFake Detection, Neobot, EduTools)
+
+### 5. **Footer**
+- Company information
+- Quick links
+- Contact details
+- Social media links
+
+## 🎭 Animations
+
+- **Floating Cards:** Smooth up-down motion on hero cards
+- **Scroll Animations:** Elements fade in as you scroll
+- **Hover Effects:** Scale, rotate, and color transitions
+- **Gradient Animation:** Animated background gradients
+- **Stagger Effects:** Sequential animations for lists
+
+## 🚀 Build & Deploy
+
+### Build for production:
+```bash
+npm run build
+```
+
+### Start production server:
+```bash
+npm start
+```
+
+### Deploy to Vercel:
+```bash
+vercel
+```
+
+## 📝 Customization
+
+### Colors
+Edit `app/globals.css` to change gradient colors and theme.
+
+### Content
+Update component files in `components/` to modify text, images, and data.
+
+### Animations
+Adjust Framer Motion parameters in component files for different animation effects.
+
+## 🌐 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+---
+
+**Made with ❤️ by AppDost Team**
